@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+  }
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .float-left {
+    float: left;
+  }
+
+  .container {
+    width: 1000px;
+    margin: 0 auto;
+  }
+
+  .first-form {
+    margin-bottom: 10px;
+  }
+  .forms {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #aaaaaa;
+  }
+
+  .button-style {
+    padding: 13px 18px;
+    border: 2px solid #000000;
+  }
+  .button-position {
+    padding-right: 220px;
+  }
+
+  .padding-bottom {
+    padding-bottom: 10px;
+  }
+
+  .font-size {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+  }
+  .clear-button{
+    padding: 5px 10px;
+    border: 2px solid #000000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+  }
