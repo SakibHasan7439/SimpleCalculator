@@ -3,75 +3,45 @@
     <head>
         <title>Javascript project</title>
         <link rel="stylesheet" href="project4.css">
+        <script src="project4.js"></script>
     </head>
 
     <body>
         <div class="container">
-
-            <!-- Javascript part -->
-
-            <script>
-                function addFunction(){
-                    let num1 = parseInt(document.getElementById("number1").value);
-                    let num2 = parseInt(document.getElementById("number2").value);
-                    let result = num1 + num2;
-                    document.getElementById("sum").value = result;
-                }
-
-                function subFunction(){
-                    let num1 = parseInt(document.getElementById("number1").value);
-                    let num2 = parseInt(document.getElementById("number2").value);
-                    let result = num1 - num2;
-                    document.getElementById("sum").value = result;
-                }
-                function mulFunction(){
-                    let num1 = parseInt(document.getElementById("number1").value);
-                    let num2 = parseInt(document.getElementById("number2").value);
-                    let result = num1 * num2;
-                    document.getElementById("sum").value = result;
-                }
-                function divFunction(){
-                    let num1 = parseInt(document.getElementById("number1").value);
-                    let num2 = parseInt(document.getElementById("number2").value);
-                    let result = num1 / num2;
-                    document.getElementById("sum").value = result;
-                }
-
-
-                 function resetAll(){
-                         document.getElementById("myForm").reset() + 
-                         document.getElementById("secondForm").reset();
-                     }
-            </script>
-
-            <!-- HTML and CSS part -->
 
             <form id="myForm">
                 <label class="font-size">Enter first number</label>
                 <input class="forms first-form" type="number" id="number1">
                 <label class="font-size">Enter second number</label>
                 <input class="forms" style="margin-bottom: 0;" type="number" id="number2">
-
             </form>
+
             <div class="clearfix padding-bottom">
                 <div class="float-left button-position">
-                    <button class="button-style" onclick="addFunction()">+</button>
+                    <button class="button-style" onclick="calFunction('+')">+</button>
                 </div>
+
                 <div class="float-left button-position">
-                    <button class="button-style" onclick="subFunction()">-</button>
+                    <button class="button-style" onclick="calFunction('-')">-</button>
                 </div>
+
                 <div class="float-left button-position">
-                    <button class="button-style" onclick="mulFunction()">*</button>
+                    <button class="button-style" onclick="calFunction('*')">*</button>
                 </div>
-                <div class="float-left">
-                    <button class="button-style" onclick="divFunction()">/</button>
+
+                <div class="float-left button-position">
+                    <button class="button-style" onclick="calFunction('/')">/</button>
                 </div>
+
             </div>
+
             <form id="secondForm">
                 <label class="font-size">Result</label>
                 <input class="forms" id="sum">
             </form>
+
             <button class="clear-button" onclick="resetAll()" type="button">clear</button>
+
         </div>
     </body>
 </html>
